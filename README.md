@@ -67,7 +67,7 @@ Each part function accepts an optional `input` string param to run the solution 
 If not specified, my puzzle inputs will be used.
 Some days accept additional parameters.
 
-```
+```js
 import { day1 } from './src/index.js'; // Modify import path as needed
 
 day1.part1();
