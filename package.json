@@ -1,0 +1,38 @@
+{
+  "name": "advent-of-code-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "day": "node ./bin/aoc2022.js",
+    "lint": "eslint src test",
+    "pretest": "npm run lint",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test-only": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "bin": {
+    "aoc2022": "./bin/aoc2022.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "jest": "^29.3.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "jest": true
+    }
+  },
+  "jest": {
+    "transform": {}
+  }
+}
